@@ -1,24 +1,24 @@
 ---
-title: "Publications"
+title: "论文成果"
 layout: gridlay
 sitemap: false
 permalink: /publications/
 ---
 
-## Publications
+## 论文成果
 
-<input type="text" class="pub-search" id="pubSearch" placeholder="Filter by title, author, or year...">
+<input type="text" class="pub-search" id="pubSearch" placeholder="按标题、作者或年份筛选论文...">
 
 <div class="section-card" id="pubList">
-<h3>Preprints</h3>
+<h3>预印本</h3>
 
 {% bibliography --query @unpublished %}
 
-<h3>Refereed Journal Articles</h3>
+<h3>期刊论文</h3>
 
 {% bibliography --query @article %}
 
-<h3>Refereed Conference Proceedings</h3>
+<h3>会议论文</h3>
 
 {% bibliography --query @inproceedings %}
 </div>
