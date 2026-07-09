@@ -7,59 +7,127 @@ permalink: /about/
 
 ## 关于老师
 
-<div class="section-card" markdown="0">
-<div style="display: grid; grid-template-columns: 260px 1fr; gap: 2.5rem; align-items: start;">
+<div class="section-card teacher-profile" markdown="1">
 
-<div style="text-align: center;">
-<img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.data.pi[0].photo }}" alt="{{ site.data.pi[0].name }}" loading="lazy" style="width: 220px; height: 280px; object-fit: cover; object-position: center; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
-
-<div style="margin-top: 1rem;">
-<a href="{{ site.data.pi[0].homepage }}" target="_blank" style="display: inline-block; padding: 0.45rem 0.9rem; border: 1px solid var(--accent-color); border-radius: 999px; color: var(--accent-color); text-decoration: none; font-size: 0.95rem;">
-教师主页
-</a>
-</div>
+<div class="teacher-photo-wrap">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.data.pi[0].photo }}" alt="{{ site.data.pi[0].name }}" class="teacher-photo" loading="lazy">
+  <p class="teacher-homepage">
+    <a href="{{ site.data.pi[0].homepage }}" target="_blank">教师主页</a>
+  </p>
 </div>
 
-<div>
-<h2 style="margin-top: 0; margin-bottom: 0.5rem;">{{ site.data.pi[0].name }}</h2>
+<div class="teacher-info">
 
-<p style="font-size: 1.05rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+### {{ site.data.pi[0].name }}
+
 {{ site.data.pi[0].title }}
-</p>
 
-<p style="color: var(--text-secondary); margin-bottom: 0.5rem;">
 {{ site.data.pi[0].institution }}
-</p>
 
-<p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
 {{ site.data.pi[0].lab }}
-</p>
 
-<div style="display: grid; grid-template-columns: 5rem 1fr; row-gap: 0.6rem; column-gap: 0.75rem; margin-bottom: 1.25rem;">
-<strong>学科</strong>
-<span>{{ site.data.pi[0].discipline }}</span>
-
-<strong>研究方向</strong>
-<span>{{ site.data.pi[0].research }}</span>
-
-<strong>邮箱</strong>
-<span><a href="mailto:{{ site.data.pi[0].email }}">{{ site.data.pi[0].email }}</a></span>
-</div>
+| 项目 | 信息 |
+|---|---|
+| 学科 | {{ site.data.pi[0].discipline }} |
+| 研究方向 | {{ site.data.pi[0].research }} |
+| 邮箱 | [{{ site.data.pi[0].email }}](mailto:{{ site.data.pi[0].email }}) |
 
 {% if site.data.pi[0].education %}
-<div style="margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--border-color);">
-<h3 style="margin-top: 0; margin-bottom: 0.75rem; font-size: 1.15rem;">教育与工作经历</h3>
-<ul style="margin-bottom: 0;">
+
+#### 教育与工作经历
+
 {% for education in site.data.pi[0].education %}
-<li>{{ education | replace: "-","&#8211;" }}</li>
+- {{ education | replace: "-","&#8211;" }}
 {% endfor %}
-</ul>
-</div>
+
 {% endif %}
+
 </div>
 
 </div>
+
+<style>
+.teacher-profile {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  padding: 2rem 2.5rem;
+}
+
+.teacher-photo-wrap {
+  text-align: center;
+}
+
+.teacher-photo {
+  width: 220px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.teacher-homepage {
+  margin-top: 1rem;
+}
+
+.teacher-homepage a {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--accent-color);
+  border-radius: 999px;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.teacher-info h3 {
+  margin-top: 0;
+}
+
+.teacher-info table {
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .teacher-profile {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .teacher-photo {
+    width: 200px;
+    height: 260px;
+  }
+}
+</style>
+
+{% if site.data.grants %}
+<div class="section-card" markdown="1">
+
+### 科研项目
+
+{% for grant in site.data.grants %}
+- {{ grant.name }}
+{% endfor %}
+
 </div>
+{% endif %}
+
+{% if site.data.awards %}
+<div class="section-card" markdown="1">
+
+### 获奖情况
+
+{% for award in site.data.awards %}
+- {{ award.name | replace: "-","&#8211;" }}
+{% endfor %}
+
+</div>
+{% endif %}
 
 {% if site.data.grants %}
 <div class="section-card">
