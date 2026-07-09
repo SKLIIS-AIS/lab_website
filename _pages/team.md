@@ -7,7 +7,12 @@ permalink: /team/
 
 ## 团队成员
 
-**课题组长期欢迎对工业互联网安全、人工智能安全、网络空间安全和数据安全等方向感兴趣的同学加入。**
+<div class="section-card" style="border-left: 4px solid var(--accent-color); padding: 1.25rem 1.5rem; margin: 1.5rem 0 2rem 0;">
+  <h3 style="margin-top: 0; margin-bottom: 0.75rem;">加入我们</h3>
+  <p style="margin-bottom: 0;">
+    课题组长期欢迎对工业互联网安全、人工智能安全、网络空间安全和数据安全等方向感兴趣的本科生、硕士生、博士生及科研合作伙伴加入或交流。
+  </p>
+</div>
 
 ## 课题组负责人
 
