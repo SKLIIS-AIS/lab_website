@@ -1,11 +1,11 @@
 ---
-title: "News"
+title: "新闻动态"
 layout: gridlay
 sitemap: false
 permalink: /allnews.html
 ---
 
-## News
+## 新闻动态
 
 <div class="section-card" markdown="0">
 <div class="news-timeline">
