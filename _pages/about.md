@@ -26,8 +26,6 @@ permalink: /about/
 
 {{ site.data.pi[0].lab }}
 
-| 项目 | 信息 |
-|---|---|
 | 学科 | {{ site.data.pi[0].discipline }} |
 | 研究方向 | {{ site.data.pi[0].research }} |
 | 邮箱 | [{{ site.data.pi[0].email }}](mailto:{{ site.data.pi[0].email }}) |
@@ -104,30 +102,6 @@ permalink: /about/
   }
 }
 </style>
-
-{% if site.data.grants %}
-<div class="section-card" markdown="1">
-
-### 科研项目
-
-{% for grant in site.data.grants %}
-- {{ grant.name }}
-{% endfor %}
-
-</div>
-{% endif %}
-
-{% if site.data.awards %}
-<div class="section-card" markdown="1">
-
-### 获奖情况
-
-{% for award in site.data.awards %}
-- {{ award.name | replace: "-","&#8211;" }}
-{% endfor %}
-
-</div>
-{% endif %}
 
 {% if site.data.grants %}
 <div class="section-card">
