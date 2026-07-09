@@ -7,49 +7,63 @@ permalink: /about/
 
 ## 关于老师
 
-<div class="section-card">
-<div class="pi-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.data.pi[0].photo }}" class="pi-photo" alt="{{ site.data.pi[0].name }}" loading="lazy">
+<div class="section-card" style="padding: 2rem 2.5rem;">
+  <div style="display: grid; grid-template-columns: 260px 1fr; gap: 2.5rem; align-items: start;">
 
-<div>
-<h3 class="pi-name">{{ site.data.pi[0].name }}</h3>
+    <div style="text-align: center;">
+      <img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.data.pi[0].photo }}"
+           alt="{{ site.data.pi[0].name }}"
+           loading="lazy"
+           style="width: 220px; height: 280px; object-fit: cover; object-position: center; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
 
-<p style="font-style: italic; color: var(--text-secondary);">
-{{ site.data.pi[0].title }}，{{ site.data.pi[0].institution }}
-</p>
+      <div style="margin-top: 1rem;">
+        <a href="{{ site.data.pi[0].homepage }}"
+           target="_blank"
+           style="display: inline-block; padding: 0.45rem 0.9rem; border: 1px solid var(--accent-color); border-radius: 999px; color: var(--accent-color); text-decoration: none; font-size: 0.95rem;">
+          教师主页
+        </a>
+      </div>
+    </div>
 
-<p style="color: var(--text-secondary);">
-{{ site.data.pi[0].lab }}
-</p>
+    <div>
+      <h2 style="margin-top: 0; margin-bottom: 0.5rem;">{{ site.data.pi[0].name }}</h2>
 
-<p>
-<strong>学科：</strong>{{ site.data.pi[0].discipline }}<br>
-<strong>研究方向：</strong>{{ site.data.pi[0].research }}
-</p>
+      <p style="font-size: 1.05rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+        {{ site.data.pi[0].title }}
+      </p>
 
-<div class="pi-links">
-<a href="mailto:{{ site.data.pi[0].email }}" class="icon-link" title="发送邮件">
-<i class="fa-solid fa-envelope"></i>
-</a>
+      <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">
+        {{ site.data.pi[0].institution }}
+      </p>
 
-<a href="{{ site.data.pi[0].homepage }}" class="icon-link" title="教师主页" target="_blank">
-<i class="fa-solid fa-house"></i>
-</a>
-</div>
+      <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+        {{ site.data.pi[0].lab }}
+      </p>
 
-<p style="margin-top: var(--space-3);">
-邮箱：<a href="mailto:{{ site.data.pi[0].email }}">{{ site.data.pi[0].email }}</a>
-</p>
+      <div style="display: grid; grid-template-columns: 5rem 1fr; row-gap: 0.6rem; column-gap: 0.75rem; margin-bottom: 1.25rem;">
+        <strong>学科</strong>
+        <span>{{ site.data.pi[0].discipline }}</span>
 
-{% if site.data.pi[0].education %}
-<ul style="margin-top: var(--space-4);">
-{% for education in site.data.pi[0].education %}
-<li>{{ education | replace: "-","&#8211;" }}</li>
-{% endfor %}
-</ul>
-{% endif %}
-</div>
-</div>
+        <strong>研究方向</strong>
+        <span>{{ site.data.pi[0].research }}</span>
+
+        <strong>邮箱</strong>
+        <span><a href="mailto:{{ site.data.pi[0].email }}">{{ site.data.pi[0].email }}</a></span>
+      </div>
+
+      {% if site.data.pi[0].education %}
+      <div style="margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--border-color);">
+        <h3 style="margin-top: 0; margin-bottom: 0.75rem; font-size: 1.15rem;">教育与工作经历</h3>
+        <ul style="margin-bottom: 0;">
+          {% for education in site.data.pi[0].education %}
+          <li>{{ education | replace: "-","&#8211;" }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+
+  </div>
 </div>
 
 {% if site.data.grants %}
