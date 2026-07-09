@@ -1,39 +1,38 @@
 ---
-title: "Home"
+title: "首页"
 layout: homelay
 sitemap: false
 permalink: /
 ---
 
 <h2 class="home-hero">{{ site.name }}</h2>
-<p class="home-hero-sub">{{ site.title }}, {{ site.institution }}</p>
+<p class="home-hero-sub">{{ site.title }}，{{ site.institution }}</p>
 
 <div class="chip-container" markdown="0">
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Quantum Electrodynamics</a>
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Path Integrals</a>
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Superfluidity</a>
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Parton Model</a>
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Quantum Computing</a>
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Nanotechnology</a>
+<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">工业互联网安全</a>
+<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">人工智能安全</a>
+<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">网络空间安全</a>
+<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">数据安全</a>
+<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">入侵检测</a>
+<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">安全评估</a>
 </div>
 
-Theoretical physics is a branch of physics that focuses on the development of mathematical models and theories to understand and explain natural phenomena.
-It plays a crucial role in our understanding of the fundamental laws of the universe and the fundamental particles that make up all matter.
-Research in theoretical physics helps us to make predictions about how the universe works and to test these predictions through experiments.
+AIS课题组隶属于太原理工大学计算机科学与技术学院，依托工业互联网安全山西省重点实验室开展科研工作。课题组主要围绕工业互联网安全、人工智能安全、网络空间安全与数据安全等方向开展研究，致力于解决智能化、网络化和工业化融合过程中面临的关键安全问题。
+
+课题组面向国家和行业在工业互联网、智能制造、关键信息基础设施保护等领域的重大需求，聚焦安全监测、威胁感知、入侵检测、漏洞分析、数据保护与可信智能等研究内容，推动网络安全理论、方法与系统应用的协同发展。
 
 <div class="callout callout-success" markdown="0">
-<div class="callout-title"><i class="fa-solid fa-award callout-icon"></i> Nobel Prize in Physics, 1965</div>
-<p>Awarded the Nobel Prize jointly with Julian Schwinger and Shin'ichiro Tomonaga for fundamental work in quantum electrodynamics, with deep-ploughing consequences for the physics of elementary particles.</p>
+<div class="callout-title"><i class="fa-solid fa-award callout-icon"></i> 研究方向</div>
+<p>课题组重点开展工业互联网安全、人工智能安全、网络空间安全、数据安全与隐私保护、智能入侵检测、安全态势感知等方面的研究。</p>
 </div>
 
 <div class="banner-frame" markdown="0">
-<img src="{{ site.url }}{{ site.baseurl }}/images/banner.jpg" alt="Feynman diagrams" loading="lazy">
-<div class="banner-caption">Examples of Feynman diagrams. Feynman R., <em>The theory of positrons. Phys. Rev.</em> (1949)</div>
+<img src="{{ site.url }}{{ site.baseurl }}/images/banner.jpg" alt="AIS课题组研究方向示意图" loading="lazy">
+<div class="banner-caption">AIS课题组围绕工业互联网安全、人工智能安全与网络空间安全开展研究。</div>
 </div>
 
-### About me
+### 关于我们
 
-I am a physicist working in the field of quantum mechanics and quantum electrodynamics.
-I received my undergraduate degree in physics from the Massachusetts Institute of Technology (MIT) in 1939 and went on to earn my PhD from Princeton University in 1942.
-After completing my doctoral studies, I worked on the Manhattan Project, where I helped develop the first atomic bombs.
-After the war, I returned to academia, holding teaching and research positions at Cornell and now at the California Institute of Technology.
+AIS课题组坚持面向前沿科学问题与实际应用需求相结合，注重理论研究、算法设计、系统实现与工程应用的融合。课题组成员包括教师、博士研究生、硕士研究生及本科生，形成了较为完整的科研训练与人才培养体系。
+
+我们欢迎对工业互联网安全、人工智能安全、网络空间安全、数据安全等方向感兴趣的同学加入课题组，也欢迎相关领域的学者、企业和科研机构与我们开展交流合作。
