@@ -9,17 +9,38 @@ permalink: /about/
 
 <div class="section-card">
 <div class="pi-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}" class="pi-photo" alt="{{ site.name }}" loading="lazy">
+<img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.data.pi[0].photo }}" class="pi-photo" alt="{{ site.data.pi[0].name }}" loading="lazy">
+
 <div>
-<h3 class="pi-name">{{ site.name }}</h3>
-<p style="font-style: italic; color: var(--text-secondary);">{{ site.title }}， {{ site.institution }}</p>
+<h3 class="pi-name">{{ site.data.pi[0].name }}</h3>
+
+<p style="font-style: italic; color: var(--text-secondary);">
+{{ site.data.pi[0].title }}，{{ site.data.pi[0].institution }}
+</p>
+
+<p style="color: var(--text-secondary);">
+{{ site.data.pi[0].lab }}
+</p>
+
+<p>
+<strong>学科：</strong>{{ site.data.pi[0].discipline }}<br>
+<strong>研究方向：</strong>{{ site.data.pi[0].research }}
+</p>
+
 <div class="pi-links">
-{% if site.email %}<a href="mailto:{{ site.email }}" class="icon-link" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}
-{% if site.links.cv and site.links.cv != "" %}<a href="{{ site.url }}{{ site.baseurl }}/{{ site.links.cv }}" class="icon-link" title="CV"><i class="ai ai-cv"></i></a>{% endif %}
-{% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}" class="icon-link" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
-{% if site.links.github and site.links.github != "" %}<a href="{{ site.links.github }}" class="icon-link" title="GitHub"><i class="fa-brands fa-github"></i></a>{% endif %}
-{% if site.links.researchgate and site.links.researchgate != "" %}<a href="{{ site.links.researchgate }}" class="icon-link" title="ResearchGate"><i class="ai ai-researchgate"></i></a>{% endif %}
+<a href="mailto:{{ site.data.pi[0].email }}" class="icon-link" title="发送邮件">
+<i class="fa-solid fa-envelope"></i>
+</a>
+
+<a href="{{ site.data.pi[0].homepage }}" class="icon-link" title="教师主页" target="_blank">
+<i class="fa-solid fa-house"></i>
+</a>
 </div>
+
+<p style="margin-top: var(--space-3);">
+邮箱：<a href="mailto:{{ site.data.pi[0].email }}">{{ site.data.pi[0].email }}</a>
+</p>
+
 {% if site.data.pi[0].education %}
 <ul style="margin-top: var(--space-4);">
 {% for education in site.data.pi[0].education %}
