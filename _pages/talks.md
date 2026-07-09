@@ -1,18 +1,18 @@
 ---
-title: "Talks"
+title: "学术报告"
 layout: gridlay
 sitemap: false
 permalink: /talks/
 ---
 
-## Talks
+## 学术报告
 
 <div class="section-card" id="pubList">
-<h3>Invited Talks</h3>
+<h3>邀请报告</h3>
 
 {% bibliography --query @incollection[keywords ^= invited] %}
 
-<h3>Regular Talks</h3>
+<h3>其他报告</h3>
 
 {% bibliography --query @incollection[keywords != invited] %}
 </div>
