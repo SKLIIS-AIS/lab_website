@@ -26,9 +26,11 @@ permalink: /about/
 
 {{ site.data.pi[0].lab }}
 
-| 学科 | {{ site.data.pi[0].discipline }} |
-| 研究方向 | {{ site.data.pi[0].research }} |
-| 邮箱 | [{{ site.data.pi[0].email }}](mailto:{{ site.data.pi[0].email }}) |
+<div class="teacher-basic-info" markdown="0">
+<p><strong>学科：</strong>{{ site.data.pi[0].discipline }}</p>
+<p><strong>研究方向：</strong>{{ site.data.pi[0].research }}</p>
+<p><strong>邮箱：</strong><a href="mailto:{{ site.data.pi[0].email }}">{{ site.data.pi[0].email }}</a></p>
+</div>
 
 {% if site.data.pi[0].education %}
 
@@ -85,9 +87,14 @@ permalink: /about/
   margin-top: 0;
 }
 
-.teacher-info table {
+.teacher-basic-info {
   margin-top: 1.25rem;
   margin-bottom: 1.5rem;
+  line-height: 1.9;
+}
+
+.teacher-basic-info p {
+  margin: 0.15rem 0;
 }
 
 @media (max-width: 768px) {
@@ -130,7 +137,7 @@ permalink: /about/
 <h3>学生培养</h3>
 <ul>
 {% for student in site.data.people %}
-<li>{{ student.name }}, {{ student.location }} ({{ student.degree }}, {{ student.year }})</li>
+<li>{{ student.name }}，{{ student.location }}（{{ student.degree }}，{{ student.year }}）</li>
 {% endfor %}
 </ul>
 </div>
@@ -141,7 +148,7 @@ permalink: /about/
 <h4>基金情况</h4>
 <div class="sponsor-logos" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--space-6);">
 {% for funder in site.data.funders %}
-<a href="{{ funder.url }}" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/{{ funder.image }}" alt="Funder logo" style="max-height: 80px; max-width: 200px; border-radius: 0;" loading="lazy"></a>
+<a href="{{ funder.url }}" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/{{ funder.image }}" alt="基金标识" style="max-height: 80px; max-width: 200px; border-radius: 0;" loading="lazy"></a>
 {% endfor %}
 </div>
 </div>
