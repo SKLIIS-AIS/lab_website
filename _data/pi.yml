@@ -1,11 +1,12 @@
-# Optional: detailed education and bio for the About page.
-# Basic info (name, photo, links) now lives in _config.yml.
-# Delete this file if you only need the basics.
+# 右侧教师信息卡片使用的数据
 
-# EXAMPLE -- replace or delete
-- education:
-    - "(1942) Ph.D. Physics, Princeton University"
-    - "(1939) B.S. Physics, Massachusetts Institute of Technology"
+- name: "王建华"
+  title: "讲师 / 硕士生导师"
+  institution: "太原理工大学计算机科学与技术学院"
+  lab: "工业互联网安全山西重点实验室"
+  email: "wangjianhua02@tyut.edu.cn"
+  photo: "wangjianhua.jpg"
   educationshort:
-    - "(1942) Ph.D. Physics, Princeton"
-    - "(1939) B.S. Physics, MIT"
+    - "太原理工大学计算机科学与技术学院"
+    - "工业互联网安全山西重点实验室"
+    - "研究方向：联邦学习、人工智能安全"
