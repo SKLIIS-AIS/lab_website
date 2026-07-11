@@ -42,7 +42,7 @@ permalink: /research/
 </div>
 
 <div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/nanotechnology.svg" class="research-thumb" alt="入侵检测与异常行为分析">
+<img src="{{ site.url }}{{ site.baseurl }}/images/research/Intrusion-Detection-and-Anomaly-Behavior-Analysis.jpg" class="research-thumb" alt="入侵检测与异常行为分析">
 <div class="research-body">
 <h4 class="research-title">入侵检测与异常行为分析</h4>
 <p class="research-desc">针对网络系统、工业系统和智能终端中的异常行为与攻击活动，研究基于流量分析、日志分析、行为建模和深度学习的入侵检测方法，构建高效、准确、可解释的安全检测与预警机制。</p>
@@ -50,7 +50,7 @@ permalink: /research/
 </div>
 
 <div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/weak-interactions.svg" class="research-thumb" alt="安全评估与可信防护">
+<img src="{{ site.url }}{{ site.baseurl }}/images/research/Security-Assessment-and Trusted-Protection.jpg" class="research-thumb" alt="安全评估与可信防护">
 <div class="research-body">
 <h4 class="research-title">安全评估与可信防护</h4>
 <p class="research-desc">围绕系统、网络、算法和应用的安全风险评估开展研究，重点关注安全测试、漏洞挖掘、风险量化、攻防验证、可信计算和安全防护体系构建，为工业互联网和智能系统提供系统化的安全评估与防护方案。</p>
