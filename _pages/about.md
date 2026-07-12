@@ -121,10 +121,10 @@ permalink: /about/
 </div>
 {% endif %}
 
-{% comment %}
+
 {% if site.data.awards %}
 <div class="section-card">
-<h3>获奖情况</h3>
+<h3>科研成果</h3>
 <ul>
 {% for award in site.data.awards %}
 <li>{{ award.name | replace: "-","&#8211;" }}</li>
@@ -132,7 +132,7 @@ permalink: /about/
 </ul>
 </div>
 {% endif %}
-{% endcomment %}
+
 
 {% if site.data.people %}
 <div class="section-card">
