@@ -139,7 +139,7 @@ permalink: /about/
 <h3>招生方向</h3>
 <ul>
 {% for student in site.data.people %}
-<li>{{ student.name }}，{{ student.location }}（{{ student.degree }}，{{ student.year }}）</li>
+<li>{{ student.name }}</li>
 {% endfor %}
 </ul>
 </div>
