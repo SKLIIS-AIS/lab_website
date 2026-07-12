@@ -1,5 +1,9 @@
 # Grants and funding, shown on the About page.
 # Each entry needs: name
-- name: NSF Grant for Quantum Electrodynamics Research
-- name: ONR Contract for Parallel Computing Research
-- name: DOE Grant for Parton Model Development
+- name: "主持：面向数据与模型安全的轻量化联邦遗忘方法研究，中央引导地方科技发展资金项目，2025.4–2027.12"
+- name: "主持：面向联邦学习搭便车攻击的评估及其防御策略研究，基本科研业务费研究生创新项目，2022–2024"
+- name: "参与：大规模联盟链共识算法效能分析及优化，国家自然科学基金面上项目，2023–2026"
+- name: "参与：面向多层域轨道交通“四网融合”的数据治理和可信交互关键技术研究（2），铁路总公司（原铁道部），2021–2023"
+- name: "参与：动静协同的恶意代码智能分析方法研究，国家自然科学基金联合基金项目，2019.1–2021.12"
+- name: "参与：航天信息隐私计算产品算法组件项目（子包：安全多方计算算法组件开发），横向项目，2023.11–2024.8"
+- name: "参与：规模化电动汽车与电网互动及充电安全防护技术研究，国网横向项目，2020.9–2022.12"

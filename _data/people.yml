@@ -1,31 +1,11 @@
 # Students and mentees, shown on the About page.
 # Each entry needs: name, location, degree, year
-- name: Albert Hibbs
-  location: Caltech
-  degree: Ph.D.
-  year: 1955
+- name: 联邦学习（Federated Learning）
 
-- name: George Zweig
-  location: Caltech
-  degree: Ph.D.
-  year: 1964
+- name: 人工智能安全（AI Security）
 
-- name: Giovanni Rossi Lomanitz
-  location: Cornell
-  degree: Ph.D.
-  year: 1951
+- name: 工业互联网安全（Industrial Internet Security）
 
-- name: Thomas Curtright
-  location: Caltech
-  degree: Ph.D.
-  year: 1977
+- name: APT攻击检测（APT Attack Detection）
 
-- name: William Frazer
-  location: Caltech
-  degree: Ph.D.
-  year: 1958
-
-- name: Robert Hellwarth
-  location: Caltech
-  degree: Ph.D.
-  year: 1956
+- name: 隐私计算（Privacy-Preserving Computing）
