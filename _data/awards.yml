@@ -1,7 +1,7 @@
 # Awards and honors, shown on the About page.
 # Each entry needs: name
-- name: Nobel Prize in Physics (1965)
-- name: Albert Einstein Award (1954)
-- name: E.O. Lawrence Award (1962)
-- name: Oersted Medal, AAPT (1972)
-- name: National Medal of Science (1979)
+- name: "CRS-FL: Conditional Random Sampling for Communication-Efficient and Privacy-Preserving Federated Learning. IEEE Transactions on Network and Service Management, 2024."
+- name: "PA-iMFL: Communication-Efficient Privacy Amplification Method against Data Reconstruction Attack in Improved Multi-Layer Federated Learning. IEEE Internet of Things Journal, 2024."
+- name: "PASS: A Parameter Audit-Based Secure and Fair Federated Learning Scheme Against Free-Rider Attack. IEEE Internet of Things Journal, 2024."
+- name: "Towards Secure Runtime Customizable Trusted Execution Environment on FPGA-SoC. IEEE Transactions on Computers, 2024."
+- name: "DI-AA: An Interpretable White-Box Attack for Fooling Deep Neural Networks. Information Sciences, 2022."
