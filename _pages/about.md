@@ -121,6 +121,7 @@ permalink: /about/
 </div>
 {% endif %}
 
+{% comment %}
 {% if site.data.awards %}
 <div class="section-card">
 <h3>获奖情况</h3>
@@ -131,10 +132,11 @@ permalink: /about/
 </ul>
 </div>
 {% endif %}
+{% endcomment %}
 
 {% if site.data.people %}
 <div class="section-card">
-<h3>学生培养</h3>
+<h3>招生方向</h3>
 <ul>
 {% for student in site.data.people %}
 <li>{{ student.name }}，{{ student.location }}（{{ student.degree }}，{{ student.year }}）</li>
@@ -143,6 +145,7 @@ permalink: /about/
 </div>
 {% endif %}
 
+{% comment %}
 {% if site.data.funders %}
 <div class="section-card">
 <h4>基金情况</h4>
@@ -153,3 +156,4 @@ permalink: /about/
 </div>
 </div>
 {% endif %}
+{% endcomment %}
