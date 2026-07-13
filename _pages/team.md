@@ -68,7 +68,10 @@ permalink: /team/
 {% for member in site.data.team_members %}
 <div class="team-card">
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/{{ member.photo }}" class="team-photo" alt="{{ member.name }}" loading="lazy">
+<img src="{{ site.url }}{{ site.baseurl }}/images/{{ member.photo }}"
+     class="team-photo"
+     alt="{{ member.name }}"
+     loading="lazy">
 
 <h4 class="team-name">{{ member.name }}</h4>
 
@@ -87,43 +90,6 @@ permalink: /team/
 {% if member.github %}<a href="{{ member.github }}" class="icon-link" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>{% endif %}
 </div>
 {% endif %}
-
-</div>
-{% endfor %}
-</div>
-{% endif %}
-
-<div class="team-links">
-{% if member.website %}
-<a href="{{ member.website }}"
-   class="icon-link"
-   title="个人主页"
-   target="_blank"
-   rel="noopener noreferrer">
-<i class="fa-solid fa-house"></i>
-</a>
-{% endif %}
-
-{% if member.scholar %}
-<a href="{{ member.scholar }}"
-   class="icon-link"
-   title="Google Scholar"
-   target="_blank"
-   rel="noopener noreferrer">
-<i class="ai ai-google-scholar"></i>
-</a>
-{% endif %}
-
-{% if member.github %}
-<a href="{{ member.github }}"
-   class="icon-link"
-   title="GitHub"
-   target="_blank"
-   rel="noopener noreferrer">
-<i class="fa-brands fa-github"></i>
-</a>
-{% endif %}
-</div>
 
 </div>
 {% endfor %}
@@ -160,6 +126,7 @@ permalink: /team/
 </p>
 </div>
 {% endif %}
+
 <style>
 .team-email {
   width: 100%;
@@ -174,10 +141,10 @@ permalink: /team/
   align-items: center;
   justify-content: center;
   gap: 0.35rem;
-  padding: 0 0.4rem;
+  padding: 0 0.35rem;
   color: var(--text-secondary);
   text-decoration: none;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   line-height: 1.35;
   overflow-wrap: anywhere;
   word-break: break-word;
@@ -189,7 +156,7 @@ permalink: /team/
 
 .team-email i {
   flex: 0 0 auto;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
 }
 
 .team-email span {
@@ -198,7 +165,7 @@ permalink: /team/
 
 @media (max-width: 768px) {
   .team-email a {
-    font-size: 0.78rem;
+    font-size: 0.76rem;
   }
 }
 </style>
