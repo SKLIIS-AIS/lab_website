@@ -64,31 +64,32 @@ permalink: /team/
 {% if site.data.team_members and site.data.team_members.size > 0 %}
 ## 在组成员
 
-<div class="team-grid">
+<div class="team-grid" markdown="0">
 {% for member in site.data.team_members %}
 <div class="team-card">
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/{{ member.photo }}"
-     class="team-photo"
-     alt="{{ member.name }}"
-     loading="lazy">
+<img src="{{ site.url }}{{ site.baseurl }}/images/{{ member.photo }}" class="team-photo" alt="{{ member.name }}" loading="lazy">
 
 <h4 class="team-name">{{ member.name }}</h4>
 
 <p class="team-info">{{ member.info }}</p>
 
 {% if member.email and member.email != "" %}
-<div class="team-email"
-     style="margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid var(--border-color);">
+<div class="team-email">
+<a href="mailto:{{ member.email | strip }}" title="发送邮件给 {{ member.name }}"><i class="fa-solid fa-envelope"></i><span>{{ member.email }}</span></a>
+</div>
+{% endif %}
 
-<a href="mailto:{{ member.email | strip }}"
-   title="发送邮件给 {{ member.name }}"
-   style="display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; font-size: 0.82rem; line-height: 1.4; word-break: break-all;">
+{% if member.website or member.scholar or member.github %}
+<div class="team-links">
+{% if member.website %}<a href="{{ member.website }}" class="icon-link" title="个人主页" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-house"></i></a>{% endif %}
+{% if member.scholar %}<a href="{{ member.scholar }}" class="icon-link" title="Google Scholar" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i></a>{% endif %}
+{% if member.github %}<a href="{{ member.github }}" class="icon-link" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>{% endif %}
+</div>
+{% endif %}
 
-<i class="fa-solid fa-envelope"></i>
-<span>{{ member.email }}</span>
-
-</a>
+</div>
+{% endfor %}
 </div>
 {% endif %}
 
@@ -159,3 +160,45 @@ permalink: /team/
 </p>
 </div>
 {% endif %}
+<style>
+.team-email {
+  width: 100%;
+  margin-top: 0.65rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.team-email a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0 0.4rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.team-email a:hover {
+  color: var(--accent-color);
+}
+
+.team-email i {
+  flex: 0 0 auto;
+  font-size: 0.82rem;
+}
+
+.team-email span {
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .team-email a {
+    font-size: 0.78rem;
+  }
+}
+</style>
