@@ -3,18 +3,62 @@
 # Optional: email, website, scholar, github, researchgate, cv
 # Photos go in images/ or images/team/
 
-- name: George Zweig
-  photo: team/george-zweig.svg
-  info: PhD Student, Quark Model
+# 在组成员
+# 成员照片请上传到 images/team/ 目录
+# photo 中的文件名必须与实际上传的图片完全一致
 
-- name: Albert Hibbs
-  photo: team/albert-hibbs.svg
-  info: PhD Student, Quantum Mechanics
+- name: "贺世博"
+  photo: "team/heshibo.jpg"
+  info: "博士研究生｜研究方向：车联网安全、AI安全"
+  email: "20190501hl@gmail.com"
+  
+  - name: "苏奕霖"
+  photo: "team/suyiling.jpg"
+  info: "博士硕士研究生｜研究方向：联邦学习"
+  email: "2024520738@link.tuyt.edu.cn"
 
-- name: Thomas Curtright
-  photo: team/thomas-curtright.svg
-  info: PhD Student, Quantum Field Theory
+- name: "刘家驰"
+  photo: "team/liujiachi.jpg"
+  info: "2024级硕士研究生｜研究方向：图像修复模型"
+  email: "1948656425@qq.com"
 
-- name: "This could be you!"
-  photo: rock.jpg
-  info: See openings for more info
+- name: "邬衡智"
+  photo: "team/wuhengzhi.jpg"
+  info: "2024级硕士研究生｜研究方向：大模型安全"
+  email: "2024520705@link.tyut.edu.cn"
+
+- name: "李炳焱"
+  photo: "team/libingyan.jpg"
+  info: "2024级硕士研究生｜研究方向：AI安全、机器遗忘"
+  email: "2024520662@link.tyut.edu.cn"
+
+  - name: "仝雅琪"
+  photo: "team/tongyaqi.jpg"
+  info: "2025级硕士研究生｜研究方向：大模型安全"
+  email: "tongyaqi0780@link.tyut.edu.cn"
+
+- name: "唐悦"
+  photo: "team/tangyue.jpg"
+  info: "2025级硕士研究生｜研究方向：联邦学习"
+  email: "tangyue0741@link.tyut.edu.cn"
+
+  - name: "吴婷"
+  photo: "team/wuting.jpg"
+  info: "2025级硕士研究生｜研究方向：大语言模型安全"
+  email: "2671188601@qq.com"
+
+  - name: "艾祖康"
+  photo: "team/aizukang.jpg"
+  info: "2025级硕士研究生｜研究方向：联邦学习"
+  email: "2906084374@qq.com"
+
+- name: "吴叶莹"
+  photo: "team/wuyeying.jpg"
+  info: "2023级本科生｜研究方向：联邦遗忘学习（特征遗忘）"
+  email: "19316331269@189.cn"
+
+- name: "刘瑞环"
+  photo: "team/liuruihuan.jpg"
+  info: "2023级本科生｜研究方向：联邦学习"
+  email: "2361366302@qq.com"
+
