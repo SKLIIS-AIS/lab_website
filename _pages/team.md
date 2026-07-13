@@ -73,13 +73,17 @@ permalink: /team/
 </div>
 {% endif %}
 
-{% if site.data.alumni.size > 0 %}
 ## 毕业生与离组成员
 
+{% if site.data.alumni and site.data.alumni.size > 0 %}
 <div class="section-card">
 <table class="alumni-table">
 <thead>
-<tr><th>姓名</th><th>在组时间</th><th>当前去向</th></tr>
+<tr>
+<th>姓名</th>
+<th>在组时间</th>
+<th>当前去向</th>
+</tr>
 </thead>
 <tbody>
 {% for member in site.data.alumni %}
@@ -89,6 +93,16 @@ permalink: /team/
 <td>{{ member.info }}</td>
 </tr>
 {% endfor %}
+</tbody>
+</table>
+</div>
+{% else %}
+<div class="section-card">
+<p style="margin: 0; color: var(--text-secondary); text-align: center;">
+暂无毕业生与离组成员
+</p>
+</div>
+{% endif %}
 </tbody>
 </table>
 </div>
