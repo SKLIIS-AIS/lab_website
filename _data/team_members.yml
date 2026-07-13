@@ -49,13 +49,18 @@
 
 - name: "吴叶莹"
   photo: "team/wuyeying.jpg"
-  info: "本科生（大三，开学后升大四）｜研究方向：联邦遗忘学习（特征遗忘）"
+  info: "2023级本科生｜研究方向：联邦遗忘学习（特征遗忘）"
   email: "19316331269@189.cn"
 
 - name: "刘瑞环"
   photo: "team/liuruihuan.jpg"
-  info: "本科生（大三）｜研究方向：联邦学习"
+  info: "2023级本科生｜研究方向：联邦学习"
   email: "2361366302@qq.com"
+
+- name: "张家宝"
+  photo: "team/张家宝.jpg"
+  info: "2023级本科生｜研究方向：人工智能安全"
+  email: "2023002078@link.tyut.edu.cn"
 
 - name: "刘子潇"
   photo: "team/liuzixiao.jpg"
