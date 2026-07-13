@@ -75,7 +75,7 @@ permalink: /team/
 
 ## 毕业生与离组成员
 
-{% if site.data.alumni and site.data.alumni.size > 0 %}
+{% if site.data.alumni.size > 0 %}
 <div class="section-card">
 <table class="alumni-table">
 <thead>
@@ -101,9 +101,5 @@ permalink: /team/
 <p style="margin: 0; color: var(--text-secondary); text-align: center;">
 暂无毕业生与离组成员
 </p>
-</div>
-{% endif %}
-</tbody>
-</table>
 </div>
 {% endif %}
