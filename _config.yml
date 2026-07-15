@@ -13,7 +13,7 @@ accent_color: "#1a7a6d"      # theme color for links and buttons
 dark_mode: true              # show dark mode toggle in navbar
 description: "AIS课题组主页，主要展示课题组研究方向、成员、论文成果与新闻动态"
 baseurl: "/lab_website"
-url: "https://kiritoazk.github.io"
+url: "https://skliis-ais.github.io"
 
 # Google Analytics — paste your GA4 measurement ID, or leave blank
 analytics:
