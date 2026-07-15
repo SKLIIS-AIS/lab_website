@@ -58,7 +58,7 @@
   email: "2361366302@qq.com"
 
 - name: "张家宝"
-  photo: "team/张家宝.jpg"
+  photo: "team/zhangjiabao.jpg"
   info: "2023级本科生｜研究方向：人工智能安全"
   email: "2023002078@link.tyut.edu.cn"
 
@@ -70,4 +70,8 @@
   photo: "team/lihaocheng.jpg"
   info: "2024级本科生｜研究方向：大模型安全"
   email: "2024005707@link.tyut.edu.cn"
+
+- name: "付浩廷"
+  photo: "team/fuhaoting.jpg"
+  info: "2024级本科生｜研究方向：大模型安全"
 
