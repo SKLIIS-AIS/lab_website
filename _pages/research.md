@@ -3,6 +3,8 @@ title: "研究方向"
 layout: gridlay
 sitemap: false
 permalink: /research/
+lang: zh-CN
+translation_url: /en/research/
 ---
 
 ## 研究方向
