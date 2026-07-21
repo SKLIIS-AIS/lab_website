@@ -1,9 +1,23 @@
-# Grants and funding, shown on the About page.
-# Each entry needs: name
+# 科研项目 / Research Projects
+# 中文页面读取 name，英文页面读取 name_en。
+
 - name: "主持：面向数据与模型安全的轻量化联邦遗忘方法研究，中央引导地方科技发展资金项目，2025.4–2027.12"
+  name_en: "Principal Investigator: Research on Lightweight Federated Unlearning Methods for Data and Model Security, Central Government-Guided Local Science and Technology Development Fund Project, April 2025–December 2027"
+
 - name: "主持：面向联邦学习搭便车攻击的评估及其防御策略研究，基本科研业务费研究生创新项目，2022–2024"
+  name_en: "Principal Investigator: Evaluation and Defense Strategies for Free-Rider Attacks in Federated Learning, Graduate Student Innovation Project under the Fundamental Research Funds, 2022–2024"
+
 - name: "参与：大规模联盟链共识算法效能分析及优化，国家自然科学基金面上项目，2023–2026"
+  name_en: "Participant: Performance Analysis and Optimization of Consensus Algorithms for Large-Scale Consortium Blockchains, General Program of the National Natural Science Foundation of China, 2023–2026"
+
 - name: "参与：面向多层域轨道交通“四网融合”的数据治理和可信交互关键技术研究（2），铁路总公司（原铁道部），2021–2023"
+  name_en: "Participant: Key Technologies for Data Governance and Trusted Interaction in the Integration of Four Networks for Multi-Domain Rail Transit (Phase II), China Railway Corporation, 2021–2023"
+
 - name: "参与：动静协同的恶意代码智能分析方法研究，国家自然科学基金联合基金项目，2019.1–2021.12"
+  name_en: "Participant: Research on Intelligent Malware Analysis through Collaborative Static and Dynamic Techniques, Joint Fund Project of the National Natural Science Foundation of China, January 2019–December 2021"
+
 - name: "参与：航天信息隐私计算产品算法组件项目（子包：安全多方计算算法组件开发），横向项目，2023.11–2024.8"
+  name_en: "Participant: Algorithm Component Project for Aerospace Information Privacy-Preserving Computing Products—Secure Multi-Party Computation Algorithm Component Development, Industry-Sponsored Project, November 2023–August 2024"
+
 - name: "参与：规模化电动汽车与电网互动及充电安全防护技术研究，国网横向项目，2020.9–2022.12"
+  name_en: "Participant: Research on Large-Scale Electric Vehicle–Grid Interaction and Charging Security Protection Technologies, State Grid Industry-Sponsored Project, September 2020–December 2022"
