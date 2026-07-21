@@ -1,13 +1,27 @@
 # 课题组负责人信息
 
 - name: "王建华"
+  name_en: "Jianhua Wang"
+
   title: "讲师 / 硕士生导师"
+  title_en: "Lecturer / Master's Supervisor"
+
   institution: "太原理工大学计算机科学与技术学院"
+  institution_en: "College of Computer Science and Technology, Taiyuan University of Technology"
+
   lab: "工业互联网安全山西重点实验室"
+  lab_en: "Shanxi Key Laboratory of Industrial Internet Security"
+
   discipline: "网络空间安全"
+  discipline_en: "Cyberspace Security"
+
   research: "联邦学习、人工智能安全"
+  research_en: "Federated Learning and Artificial Intelligence Security"
+
   email: "wangjianhua02@tyut.edu.cn"
+
   photo: "wangjianhua.png"
+
   homepage: "https://ccst.tyut.edu.cn/info/2129/10781.htm"
 
   education:
@@ -16,7 +30,18 @@
     - "2017.9-2020.6：太原理工大学 硕士"
     - "2013.9-2017.6：太原理工大学 学士"
 
+  education_en:
+    - "July 2024-Present: Lecturer, College of Computer Science and Technology, Taiyuan University of Technology"
+    - "September 2020-June 2024: Ph.D., Beijing Jiaotong University"
+    - "September 2017-June 2020: Master's Degree, Taiyuan University of Technology"
+    - "September 2013-June 2017: Bachelor's Degree, Taiyuan University of Technology"
+
   educationshort:
     - "学科：网络空间安全"
     - "研究方向：联邦学习、人工智能安全"
     - "邮箱：wangjianhua02@tyut.edu.cn"
+
+  educationshort_en:
+    - "Discipline: Cyberspace Security"
+    - "Research Interests: Federated Learning and Artificial Intelligence Security"
+    - "Email: wangjianhua02@tyut.edu.cn"
