@@ -1,22 +1,23 @@
 # 新闻动态，按时间倒序排列，最新内容放在最前面
 # News items are listed in reverse chronological order.
+# 注意：date 必须使用 YYYY-MM-DD 标准格式，否则 feed.xml 构建会失败。
 
-- date: "2026-7-15"
+- date: "2026-07-15"
   date_en: "July 15, 2026"
   headline: "AIS课题组主页正式上线。"
   headline_en: "The official website of the AIS Research Group was launched."
 
-- date: "2026-6-1"
+- date: "2026-06-01"
   date_en: "June 1, 2026"
   headline: "祝福2023级硕士研究生毕业快乐。"
   headline_en: "Congratulations to the master's students of the Class of 2023 on their graduation."
 
-- date: "2026年6月"
+- date: "2026-06-01"
   date_en: "June 2026"
   headline: "课题组论文被国际期刊录用。"
   headline_en: "A research paper from our group was accepted by an international journal."
 
-- date: "2026-5-1"
+- date: "2026-05-01"
   date_en: "May 1, 2026"
   headline: "欢迎2026级硕士研究生加入AIS课题组。"
   headline_en: "Welcome the master's students of the Class of 2026 to the AIS Research Group."
