@@ -15,21 +15,9 @@ translation_url: /allnews.html
 {% for article in site.data.news %}
 <div class="news-item">
 
-<span class="news-date">
-{% if article.date_en %}
-{{ article.date_en }}
-{% else %}
-{{ article.date }}
-{% endif %}
-</span>
+<span class="news-date">{% if article.date_en %}{{ article.date_en }}{% else %}{{ article.date }}{% endif %}</span>
 
-<span class="news-headline">
-{% if article.headline_en %}
-{{ article.headline_en }}
-{% else %}
-{{ article.headline }}
-{% endif %}
-</span>
+<span class="news-headline">{% if article.headline_en %}{{ article.headline_en }}{% else %}{{ article.headline }}{% endif %}</span>
 
 </div>
 {% endfor %}
