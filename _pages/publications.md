@@ -3,6 +3,8 @@ title: "论文成果"
 layout: gridlay
 sitemap: false
 permalink: /publications/
+lang: zh-CN
+translation_url: /en/publications/
 ---
 
 ## 论文成果
