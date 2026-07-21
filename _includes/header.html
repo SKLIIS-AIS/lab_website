@@ -1,63 +1,194 @@
+{% assign is_en = false %}
+{% if page.lang == "en" %}
+  {% assign is_en = true %}
+{% endif %}
+
+{% if is_en %}
+  {% assign home_path = "/en/" %}
+  {% assign brand_name = site.name_en | default: site.name %}
+  {% assign default_switch_path = "/" %}
+{% else %}
+  {% assign home_path = "/" %}
+  {% assign brand_name = site.name %}
+  {% assign default_switch_path = "/en/" %}
+{% endif %}
+
+{% assign switch_path = page.translation_url | default: default_switch_path %}
+
 <nav class="navbar sticky-top navbar-expand-md">
   <div class="container" style="max-width: var(--container-max);">
-    <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">
-      <img src="{{ site.url }}{{ site.baseurl }}/favicon.svg" width="24" height="24" class="d-inline-block align-text-top" alt="" style="border-radius: 5px;">
-      {{ site.name | escape }}
+
+    <!-- 网站名称与首页链接 -->
+    <a class="navbar-brand" href="{{ home_path | relative_url }}">
+      <img
+        src="{{ '/favicon.svg' | relative_url }}"
+        width="24"
+        height="24"
+        class="d-inline-block align-text-top"
+        alt="{{ brand_name | escape }}"
+        style="border-radius: 5px;">
+
+      {{ brand_name | escape }}
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="切换导航">
+    <!-- 移动端导航栏按钮 -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="{% if is_en %}Toggle navigation{% else %}切换导航{% endif %}">
+
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav">
+
+      <!-- 页面导航 -->
       <ul class="navbar-nav me-auto">
+
+        <!-- 首页 -->
         <li class="nav-item">
-          <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/">首页</a>
+          <a
+            class="nav-link{% if page.url == home_path %} active{% endif %}"
+            href="{{ home_path | relative_url }}">
+
+            {% if is_en %}
+              Home
+            {% else %}
+              首页
+            {% endif %}
+          </a>
         </li>
 
+        <!-- 其他导航页面 -->
         {% for nav in site.nav_pages %}
-        {% assign nav_title = nav.name %}
-        {% if nav.name == "about" %}
-          {% assign nav_title = "关于老师" %}
-        {% elsif nav.name == "publications" %}
-          {% assign nav_title = "论文成果" %}
-        {% elsif nav.name == "talks" %}
-          {% assign nav_title = "学术报告" %}
-        {% elsif nav.name == "research" %}
-          {% assign nav_title = "研究方向" %}
-        {% elsif nav.name == "team" %}
-          {% assign nav_title = "团队成员" %}
-        {% endif %}
 
-        <li class="nav-item">
-          <a class="nav-link{% if page.url contains nav.name %} active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/{{ nav.name }}">{{ nav_title }}</a>
-        </li>
+          {% if is_en %}
+
+            {% assign nav_path = "/en/" | append: nav.name | append: "/" %}
+
+            {% case nav.name %}
+              {% when "about" %}
+                {% assign nav_title = "About" %}
+              {% when "publications" %}
+                {% assign nav_title = "Publications" %}
+              {% when "talks" %}
+                {% assign nav_title = "Talks" %}
+              {% when "research" %}
+                {% assign nav_title = "Research" %}
+              {% when "team" %}
+                {% assign nav_title = "Team" %}
+              {% else %}
+                {% assign nav_title = nav.name %}
+            {% endcase %}
+
+          {% else %}
+
+            {% assign nav_path = "/" | append: nav.name | append: "/" %}
+
+            {% case nav.name %}
+              {% when "about" %}
+                {% assign nav_title = "关于老师" %}
+              {% when "publications" %}
+                {% assign nav_title = "论文成果" %}
+              {% when "talks" %}
+                {% assign nav_title = "学术报告" %}
+              {% when "research" %}
+                {% assign nav_title = "研究方向" %}
+              {% when "team" %}
+                {% assign nav_title = "团队成员" %}
+              {% else %}
+                {% assign nav_title = nav.name %}
+            {% endcase %}
+
+          {% endif %}
+
+          <li class="nav-item">
+            <a
+              class="nav-link{% if page.url == nav_path %} active{% endif %}"
+              href="{{ nav_path | relative_url }}">
+
+              {{ nav_title }}
+            </a>
+          </li>
+
         {% endfor %}
+
       </ul>
 
-      <div class="d-flex align-items-center" style="gap: var(--space-2);">
-        <button class="search-toggle" id="searchToggle" aria-label="站内搜索">
+      <!-- 右侧功能按钮 -->
+      <div
+        class="d-flex align-items-center"
+        style="gap: var(--space-2);">
+
+        <!-- 中英文切换按钮 -->
+        <a
+          href="{{ switch_path | relative_url }}"
+          class="language-toggle"
+          aria-label="{% if is_en %}切换到中文{% else %}Switch to English{% endif %}"
+          title="{% if is_en %}切换到中文{% else %}Switch to English{% endif %}">
+
+          {% if is_en %}
+            中文
+          {% else %}
+            EN
+          {% endif %}
+        </a>
+
+        <!-- 搜索按钮 -->
+        <button
+          class="search-toggle"
+          id="searchToggle"
+          type="button"
+          aria-label="{% if is_en %}Search website{% else %}站内搜索{% endif %}"
+          title="{% if is_en %}Search website{% else %}站内搜索{% endif %}">
+
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
 
+        <!-- 深色模式按钮 -->
         {% if site.dark_mode %}
-        <button class="dark-mode-toggle" id="darkModeToggle" aria-label="切换深色模式">
+        <button
+          class="dark-mode-toggle"
+          id="darkModeToggle"
+          type="button"
+          aria-label="{% if is_en %}Toggle dark mode{% else %}切换深色模式{% endif %}"
+          title="{% if is_en %}Toggle dark mode{% else %}切换深色模式{% endif %}">
+
           <i class="fa-solid fa-sun" id="themeIcon"></i>
         </button>
         {% endif %}
+
       </div>
+
     </div>
   </div>
 </nav>
 
-<!-- Search overlay -->
+<!-- 搜索窗口 -->
 <div class="search-overlay" id="searchOverlay">
-<div class="search-modal">
-<div class="search-input-wrapper">
-<i class="fa-solid fa-magnifying-glass search-input-icon"></i>
-<input type="text" class="search-input" id="searchInput" placeholder="搜索页面..." autocomplete="off">
-<kbd class="search-kbd">ESC</kbd>
-</div>
-<div class="search-results" id="searchResults"></div>
-</div>
+  <div class="search-modal">
+
+    <div class="search-input-wrapper">
+
+      <i class="fa-solid fa-magnifying-glass search-input-icon"></i>
+
+      <input
+        type="text"
+        class="search-input"
+        id="searchInput"
+        placeholder="{% if is_en %}Search pages...{% else %}搜索页面...{% endif %}"
+        aria-label="{% if is_en %}Search pages{% else %}搜索页面{% endif %}"
+        autocomplete="off">
+
+      <kbd class="search-kbd">ESC</kbd>
+
+    </div>
+
+    <div class="search-results" id="searchResults"></div>
+
+  </div>
 </div>
