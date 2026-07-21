@@ -1,77 +1,108 @@
-# 在组成员
+# 在组成员 / Current Members
 # 照片存放在 images/team/ 目录
+# Photo files are stored in the images/team/ directory.
 # photo 中的文件名必须与实际图片名称完全一致
 
 - name: "贺世博"
+  name_en: "Shibo He"
   photo: "team/heshibo.jpg"
   info: "博士研究生｜研究方向：车联网安全、AI安全"
+  info_en: "Ph.D. Student | Research Interests: Internet of Vehicles Security and AI Security"
   email: "20190501hl@gmail.com"
 
 - name: "苏奕霖"
+  name_en: "Yilin Su"
   photo: "team/suyiling.jpg"
   info: "博士研究生｜研究方向：联邦学习"
+  info_en: "Ph.D. Student | Research Interest: Federated Learning"
   email: "2024520738@link.tyut.edu.cn"
 
 - name: "刘家驰"
+  name_en: "Jiachi Liu"
   photo: "team/liujiachi.jpg"
   info: "2024级硕士研究生｜研究方向：图像修复模型"
+  info_en: "Master's Student, Class of 2024 | Research Interest: Image Restoration Models"
   email: "1948656425@qq.com"
 
 - name: "邬衡智"
+  name_en: "Hengzhi Wu"
   photo: "team/wuhengzhi.jpg"
   info: "2024级硕士研究生｜研究方向：大模型安全"
+  info_en: "Master's Student, Class of 2024 | Research Interest: Large Language Model Security"
   email: "2024520705@link.tyut.edu.cn"
 
 - name: "李炳焱"
+  name_en: "Bingyan Li"
   photo: "team/libingyan.jpg"
   info: "2024级硕士研究生｜研究方向：AI安全、机器遗忘"
+  info_en: "Master's Student, Class of 2024 | Research Interests: AI Security and Machine Unlearning"
   email: "2024520662@link.tyut.edu.cn"
 
 - name: "仝雅琪"
+  name_en: "Yaqi Tong"
   photo: "team/tongyaqi.jpg"
   info: "2025级硕士研究生｜研究方向：大模型安全"
+  info_en: "Master's Student, Class of 2025 | Research Interest: Large Language Model Security"
   email: "tongyaqi0780@link.tyut.edu.cn"
 
 - name: "唐悦"
+  name_en: "Yue Tang"
   photo: "team/tangyue.jpg"
   info: "2025级硕士研究生｜研究方向：联邦学习"
+  info_en: "Master's Student, Class of 2025 | Research Interest: Federated Learning"
   email: "tangyue0741@link.tyut.edu.cn"
 
 - name: "吴婷"
+  name_en: "Ting Wu"
   photo: "team/wuting.jpg"
   info: "2025级硕士研究生｜研究方向：大语言模型安全"
+  info_en: "Master's Student, Class of 2025 | Research Interest: Large Language Model Security"
   email: "2671188601@qq.com"
 
 - name: "艾祖康"
+  name_en: "Zukang Ai"
   photo: "team/aizukang.jpg"
   info: "2025级硕士研究生｜研究方向：联邦学习、隐私攻击"
+  info_en: "Master's Student, Class of 2025 | Research Interests: Federated Learning and Privacy Attacks"
   email: "2906084374@qq.com"
 
 - name: "吴叶莹"
+  name_en: "Yeying Wu"
   photo: "team/wuyeying.jpg"
   info: "2023级本科生｜研究方向：联邦遗忘学习（特征遗忘）"
+  info_en: "Undergraduate Student, Class of 2023 | Research Interest: Federated Unlearning (Feature Unlearning)"
   email: "19316331269@189.cn"
 
 - name: "刘瑞环"
+  name_en: "Ruihuan Liu"
   photo: "team/liuruihuan.jpg"
   info: "2023级本科生｜研究方向：联邦学习"
+  info_en: "Undergraduate Student, Class of 2023 | Research Interest: Federated Learning"
   email: "2361366302@qq.com"
 
 - name: "张家宝"
+  name_en: "Jiabao Zhang"
   photo: "team/zhangjiabao.jpg"
   info: "2023级本科生｜研究方向：人工智能安全"
+  info_en: "Undergraduate Student, Class of 2023 | Research Interest: Artificial Intelligence Security"
   email: "2023002078@link.tyut.edu.cn"
 
 - name: "刘子潇"
+  name_en: "Zixiao Liu"
   photo: "team/liuzixiao.jpg"
   info: "2024级本科生｜研究方向：联邦遗忘"
+  info_en: "Undergraduate Student, Class of 2024 | Research Interest: Federated Unlearning"
 
 - name: "李浩诚"
+  name_en: "Haocheng Li"
   photo: "team/lihaocheng.jpg"
   info: "2024级本科生｜研究方向：大模型安全"
+  info_en: "Undergraduate Student, Class of 2024 | Research Interest: Large Language Model Security"
   email: "2024005707@link.tyut.edu.cn"
 
 - name: "付浩廷"
+  name_en: "Haoting Fu"
   photo: "team/fuhaoting.jpg"
   info: "2024级本科生｜研究方向：大模型安全"
+  info_en: "Undergraduate Student, Class of 2024 | Research Interest: Large Language Model Security"
 
