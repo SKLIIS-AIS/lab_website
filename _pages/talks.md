@@ -3,6 +3,8 @@ title: "学术报告"
 layout: gridlay
 sitemap: false
 permalink: /talks/
+lang: zh-CN
+translation_url: /en/talks/
 ---
 
 ## 学术报告
