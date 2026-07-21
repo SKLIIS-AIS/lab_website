@@ -2,8 +2,11 @@
 # STEP 1: Your Identity (required)
 # ============================================================
 name: "AIS课题组"
+name_en: "AIS Research Group"
 title: "工业互联网安全山西重点实验室"
+title_en: "Shanxi Key Laboratory of Industrial Internet Security"
 institution: "太原理工大学计算机科学与技术学院"
+institution_en: "College of Computer Science and Technology, Taiyuan University of Technology"
 email: wangjianhua02@tyut.edu.cn
 photo: headshot.jpg  # place your photo in images/
 # ============================================================
@@ -12,6 +15,7 @@ photo: headshot.jpg  # place your photo in images/
 accent_color: "#1a7a6d"      # theme color for links and buttons
 dark_mode: true              # show dark mode toggle in navbar
 description: "AIS课题组主页，主要展示课题组研究方向、成员、论文成果与新闻动态"
+description_en: "Official website of the AIS Research Group, featuring research areas, members, publications, and academic activities."
 baseurl: "/lab_website"
 url: "https://skliis-ais.github.io"
 
