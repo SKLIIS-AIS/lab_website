@@ -1,8 +1,10 @@
 ---
-title: "首页"
+title: 首页
 layout: homelay
 sitemap: false
 permalink: /
+lang: zh-CN
+translation_url: /en/
 ---
 
 <h2 class="home-hero">{{ site.name }}</h2>
