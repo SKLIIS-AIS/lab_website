@@ -5,40 +5,66 @@
   <div class="text-justify">{{ reference }}</div>
 
   <!-- You can use the below to make your name bold -->
-  <!-- <div class="text-justify">{{ reference | replace_first: 'Bryngelson, S. H.', '<b>Bryngelson, S. H.</b>' }}</div> -->
-
-  {% assign bibtest = false %}
-  {% if entry.file %}
-  {% assign bibfile = "/papers/" | append: entry.file %}
-  {% for file in site.static_files %}
-    {% if file.path contains bibfile %}
-     {% assign bibtest = true %}
-    {% endif %}
-  {% endfor %}
-  {% endif %}
+  <!--
+  <div class="text-justify">
+    {{ reference | replace_first: 'Bryngelson, S. H.', '<b>Bryngelson, S. H.</b>' }}
+  </div>
+  -->
 
   <div class="pub-actions">
-    {% if bibtest %}
-    <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.file }}" target="_blank" class="btn-pill btn-pdf">PDF</a>
+
+    <!-- GitHub 按钮 -->
+    {% if entry.github %}
+    <a href="{{ entry.github }}"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn-pill btn-git">
+      GitHub
+    </a>
     {% endif %}
 
+    <!-- DOI 或 arXiv 按钮 -->
     {% if entry.doi %}
       {% if entry.type == 'unpublished' %}
-      <a href="{{ entry.doi | prepend: 'https://arxiv.org/abs/' }}" target="_blank" class="btn-pill btn-arxiv">arXiv</a>
+      <a href="{{ entry.doi | prepend: 'https://arxiv.org/abs/' }}"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="btn-pill btn-arxiv">
+        arXiv
+      </a>
       {% else %}
-      <a href="{{ entry.doi | prepend: 'http://doi.org/' }}" target="_blank" class="btn-pill btn-doi">DOI</a>
+      <a href="{{ entry.doi | prepend: 'https://doi.org/' }}"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="btn-pill btn-doi">
+        DOI
+      </a>
       {% endif %}
     {% endif %}
 
-    {% if entry.type == 'unpublished' or entry.type == 'article' or entry.type == 'thesis' or entry.type == 'inproceedings' or entry.type == 'report' %}
-    <button class="btn-pill btn-bib" data-toggle-target="bib-{{ entry.key }}">BIB</button>
+    <!-- BIB 按钮 -->
+    {% if entry.type == 'unpublished'
+       or entry.type == 'article'
+       or entry.type == 'thesis'
+       or entry.type == 'inproceedings'
+       or entry.type == 'report' %}
+    <button class="btn-pill btn-bib"
+            data-toggle-target="bib-{{ entry.key }}">
+      BIB
+    </button>
     {% endif %}
 
+    <!-- Abstract 按钮 -->
     {% if entry.abstract %}
-    <button class="btn-pill btn-abstract" data-toggle-target="abs-{{ entry.key }}">Abstract</button>
+    <button class="btn-pill btn-abstract"
+            data-toggle-target="abs-{{ entry.key }}">
+      Abstract
+    </button>
     {% endif %}
+
   </div>
 
+  <!-- BibTeX 展开区域 -->
   {% if entry.abstract %}
   <div class="pub-collapse" id="bib-{{ entry.key }}">
     <pre>{{ entry.bibtex | remove: "entry.abstract" }}</pre>
@@ -49,6 +75,7 @@
   </div>
   {% endif %}
 
+  <!-- 摘要展开区域 -->
   {% if entry.abstract %}
   <div class="pub-collapse" id="abs-{{ entry.key }}">
     <pre>{{ entry.abstract }}</pre>
