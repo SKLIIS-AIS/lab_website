@@ -3,6 +3,8 @@ title: "团队成员"
 layout: gridlay
 sitemap: false
 permalink: /team/
+lang: zh-CN
+translation_url: /en/team/
 ---
 
 ## 团队成员
