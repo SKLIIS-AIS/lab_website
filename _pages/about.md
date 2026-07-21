@@ -3,6 +3,8 @@ title: "关于老师"
 layout: gridlay
 sitemap: false
 permalink: /about/
+lang: zh-CN
+translation_url: /en/about/
 ---
 
 ## 关于老师
