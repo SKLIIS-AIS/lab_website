@@ -66,6 +66,21 @@
   info_en: "Master's Student, Class of 2025 | Research Interests: Federated Learning and Privacy Attacks"
   email: "2906084374@qq.com"
 
+  - name: "张浩哲"
+  name_en: "Haozhe Zhang"
+  photo: ""
+  info: "2026级研究生"
+  info_en: "Master's Student, Class of 2026"
+  email: "3382996418@qq.com"
+
+- name: "高思远"
+  name_en: "Siyuan Gao"
+  photo: ""
+  info: "2026级研究生"
+  info_en: "Master's Student, Class of 2026"
+  email: "@qq.com"
+
+
 - name: "吴叶莹"
   name_en: "Yeying Wu"
   photo: "team/wuyeying.jpg"
@@ -105,4 +120,6 @@
   photo: "team/fuhaoting.jpg"
   info: "2024级本科生｜研究方向：大模型安全"
   info_en: "Undergraduate Student, Class of 2024 | Research Interest: Large Language Model Security"
+
+  
 
